@@ -26,7 +26,7 @@ if ($numrow > 0) {
         extract($row);
         $getallRoomtemp_item = array(
             "roomtempId" => $roomtempId,
-            "temp3" => $tem3,
+            "temp3" => $temp3,
             "datesave" => $datesave,
             "timesave" => $timesave,
         );
