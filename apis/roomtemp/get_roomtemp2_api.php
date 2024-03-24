@@ -25,7 +25,10 @@ if ($numrow > 0) {
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
         $getallRoomtemp_item = array(
-            "temp2" => $temp1,
+            "roomtempId" => $roomtempId,
+            "temp1" => $temp1,
+            "temp2" => $temp2,
+            "temp3" => $temp3,
             "datesave" => $datesave,
             "timesave" => $timesave,
         );
