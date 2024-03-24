@@ -35,6 +35,40 @@ class Roomtemp
         return $stmt;
     }
 
+        //function getRoomtemp1
+        function getRoomtemp1()
+        {
+            $strSQL = "SELECT temp1, datesave, timesave FROM roomtemp_tb";
+    
+            $stmt = $this->conn->prepare($strSQL);
+    
+            $stmt->execute();
+    
+            return $stmt;
+        }
+
+        function getRoomtemp2()
+        {
+            $strSQL = "SELECT temp2, datesave, timesave FROM roomtemp_tb";
+    
+            $stmt = $this->conn->prepare($strSQL);
+    
+            $stmt->execute();
+    
+            return $stmt;
+        }
+
+        function getRoomtemp3()
+        {
+            $strSQL = "SELECT temp3, datesave, timesave FROM roomtemp_tb";
+    
+            $stmt = $this->conn->prepare($strSQL);
+    
+            $stmt->execute();
+    
+            return $stmt;
+        }
+
     //function insertUser ที่ทำงานกับ insert_roomtemp_api.php
     function insertRoomtemp()
     {
