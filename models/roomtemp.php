@@ -38,7 +38,7 @@ class Roomtemp
         //function getRoomtemp1
         function getRoomtemp1()
         {
-            $strSQL = "SELECT temp1, datesave, timesave FROM roomtemp_tb";
+            $strSQL = "SELECT roomtempId, temp1, datesave, timesave FROM roomtemp_tb";
     
             $stmt = $this->conn->prepare($strSQL);
     
@@ -49,7 +49,7 @@ class Roomtemp
 
         function getRoomtemp2()
         {
-            $strSQL = "SELECT temp2, datesave, timesave FROM roomtemp_tb";
+            $strSQL = "SELECT roomtempId,  temp2, datesave, timesave FROM roomtemp_tb";
     
             $stmt = $this->conn->prepare($strSQL);
     
@@ -60,7 +60,7 @@ class Roomtemp
 
         function getRoomtemp3()
         {
-            $strSQL = "SELECT temp3, datesave, timesave FROM roomtemp_tb";
+            $strSQL = "SELECT roomtempId,  temp3, datesave, timesave FROM roomtemp_tb";
     
             $stmt = $this->conn->prepare($strSQL);
     

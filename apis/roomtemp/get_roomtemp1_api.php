@@ -11,7 +11,7 @@ $connDB = $databaseConnect->getConnection();
 $getallRoomtemp = new Roomtemp($connDB);
 
 //เรียกใช้ Function ตามวัตถุประสงค์ของ API ตัวนี้
-$stmt = $getallRoomtemp->getallRoomtemp();
+$stmt = $getallRoomtemp->getRoomtemp1();
 
 //นับแถวเพื่อดูว่าได้ข้อมูลมาไหม 
 $numrow = $stmt->rowCount();
@@ -27,8 +27,6 @@ if ($numrow > 0) {
         $getallRoomtemp_item = array(
             "roomtempId" => $roomtempId,
             "temp1" => $temp1,
-            "temp2" => $temp2,
-            "temp3" => $temp3,
             "datesave" => $datesave,
             "timesave" => $timesave,
         );
